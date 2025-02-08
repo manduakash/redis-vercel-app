@@ -33,5 +33,9 @@ app.get('/get', async (req, res) => {
   res.send(value ? `🔹 Message from Redis: ${value}` : '❌ No message found');
 });
 
+app.get('/test', async (req, res) => {
+  res.send(`🔹 radis server is online`);
+});
+
 // Start Server
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
