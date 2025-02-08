@@ -33,7 +33,7 @@ app.get('/get', async (req, res) => {
   res.send(value ? `🔹 Message from Redis: ${value}` : '❌ No message found');
 });
 
-app.get('/test', async (req, res) => {
+app.get('/', async (req, res) => {
   res.send(`🔹 radis server is online`);
 });
 
